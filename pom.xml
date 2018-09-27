@@ -61,7 +61,7 @@
                 <version>2.20.1</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>${project.basedir}/src/main/java/com/aravinda/app_uiTest/testPlan/suite1.xml
+                        <suiteXmlFile>${project.basedir}/src/main/java/com/aravinda/app/testPlans/suite1.xml
                         </suiteXmlFile>
                     </suiteXmlFiles>
                     <testFailureIgnore>true</testFailureIgnore>

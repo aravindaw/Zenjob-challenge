@@ -20,7 +20,7 @@ public class RegisterNewCustomerDocument extends StartDriver {
         this.context = context;
     }
 
-    public void registerNewCustomer() throws InterruptedException {
+    public void registerNewCustomer() {
         FrontPage frontPage = PageFactory.initElements(driver, FrontPage.class);
         SigninPage signinPage = PageFactory.initElements(driver, SigninPage.class);
         UserRegistrationPage userRegistrationPage = PageFactory.initElements(driver, UserRegistrationPage.class);
@@ -38,8 +38,6 @@ public class RegisterNewCustomerDocument extends StartDriver {
         } catch (Exception e) {
             logger.info("No popup messages");
         }
-
-        Thread.sleep(10000);
         Assert.assertTrue(driver.findElement(By.xpath("//p[contains(text(),'Sie sind angemeldet als " + context.getNewEmail() + "')]")).isDisplayed());
     }
 }

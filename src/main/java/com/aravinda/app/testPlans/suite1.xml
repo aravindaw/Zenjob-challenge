@@ -2,20 +2,20 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <!--parallel="methods"/"false"-->
-<suite name="Test OSP internet plan test floors" parallel="true" thread-count="10" verbose="10">
+<suite name="Test user based test cases" parallel="true" thread-count="10" verbose="10">
     <test name="TC01">
         <classes>
-            <class name="com.aravinda.app_uiTest.scripts.UITC1_AccessAddressFormatterMainPageTestScript"/>
+            <class name="com.aravinda.app.scripts.UITC_1_RegisterNewCustomer"/>
         </classes>
     </test>
     <test name="TC02">
         <classes>
-            <class name="com.aravinda.app_uiTest.scripts.UITC2_MainPageResetButtonTestScript"/>
+            <class name="com.aravinda.app.scripts.UITC_2_UserLoginTest"/>
         </classes>
     </test>
     <test name="TC03">
         <classes>
-            <class name="com.aravinda.app_uiTest.scripts.UITC3_AddressTypeTest"/>
+            <class name="com.aravinda.app.scripts.UITC_3_SearchInTravelSectionTest"/>
         </classes>
     </test>
 </suite>
