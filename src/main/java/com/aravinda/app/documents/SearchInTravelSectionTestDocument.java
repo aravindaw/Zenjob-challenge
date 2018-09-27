@@ -18,32 +18,25 @@ public class SearchInTravelSectionTestDocument extends StartDriver {
         this.context = context;
     }
 
-    public void search() throws InterruptedException {
+    public void search() {
         UserAccountPage userAccountPage = PageFactory.initElements(driver, UserAccountPage.class);
         TravelPage travelPage = PageFactory.initElements(driver, TravelPage.class);
-
         userAccountPage.clickReiseLink();
-
         try {
+            Thread.sleep(5000);
             driver.findElement(By.xpath("//span[contains(text(),'erweiterte Suche')]")).click();
         } catch (Exception e) {
-            System.out.println("#############################################");
             logger.info("No popup displayed");
         }
-
         travelPage.setReisezielOderHotelTextField(context.getDestination());
         travelPage.setAbflughafenTextField(context.getDeparture());
         travelPage.frhesteHinreise.clear();
         travelPage.setFrhesteHinreiseTextField(context.getArrivalDate());
         travelPage.sptesteRckreise.clear();
         travelPage.setSptesteRckreiseTextField(context.getReturnDate());
-
         Select dropdown = new Select(driver.findElement(By.xpath("//select[@id='c24-travel-travel-duration-element']")));
         dropdown.selectByValue("exact");
-
         travelPage.clickReiseFindenButton();
-        Thread.sleep(5000);
-
 
     }
 }

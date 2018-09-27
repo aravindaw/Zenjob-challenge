@@ -18,7 +18,7 @@ import java.util.Random;
 public class UITC_2_UserLoginTest extends StartDriver {
 
     @Test
-    public void userLoginTest() throws InterruptedException {
+    public void userLoginTest() {
         UserLoginTestContext context = new UserLoginTestContext();
 
         context.setEmail("testuser@gmail.com");

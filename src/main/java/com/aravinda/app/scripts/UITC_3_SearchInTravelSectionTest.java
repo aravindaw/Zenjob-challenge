@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 public class UITC_3_SearchInTravelSectionTest extends StartDriver {
 
     @BeforeTest
-    public void login() throws InterruptedException {
+    public void login() {
         new UITC_2_UserLoginTest().userLoginTest();
     }
 
