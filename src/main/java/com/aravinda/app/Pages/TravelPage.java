@@ -23,7 +23,7 @@ public class TravelPage extends StartDriver {
 
     @FindBy(id = "c24-travel-airport-element")
     @CacheLookup
-    private WebElement abflughafen;
+    public WebElement abflughafen;
 
     @FindBy(css = "a[title='Abmelden']")
     @CacheLookup
@@ -1635,7 +1635,7 @@ public class TravelPage extends StartDriver {
 
     @FindBy(id = "c24-travel-destination-element")
     @CacheLookup
-    private WebElement reisezielOderHotel;
+    public WebElement reisezielOderHotel;
 
     @FindBy(css = "a[href='/reisen']")
     @CacheLookup

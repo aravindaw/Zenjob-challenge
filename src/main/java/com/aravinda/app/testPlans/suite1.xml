@@ -18,4 +18,9 @@
             <class name="com.aravinda.app.scripts.UITC_3_SearchInTravelSectionTest"/>
         </classes>
     </test>
+    <test name="TC04">
+        <classes>
+            <class name="com.aravinda.app.scripts.UITC_4_RegistrationPageValidation"/>
+        </classes>
+    </test>
 </suite>
