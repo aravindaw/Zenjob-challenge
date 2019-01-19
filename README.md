@@ -1,4 +1,4 @@
-# Project - Zenjob-challenge
+# Web-test
 
 This code solution cover the basic test cases in [https://www.check24.de](https://www.check24.de/) including bellow.
 - Registering new customer
