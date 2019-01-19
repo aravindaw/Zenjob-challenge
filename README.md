@@ -31,13 +31,8 @@ need to serve as input. Also, we can add *Test Case Precondition Blocks* in scri
 
 ##### Run UI automated test cases
 1. Open up a Terminal.
-2. Navigate to project folder ```$cd Zenjob-challenge```
+2. Navigate to project folder ```$cd web-test```
 4. Execute the command ```$mvn test```
 
 ### Test case Document
 Please find the Test case document inside the project.
-
-
-
-
-
